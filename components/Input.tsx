@@ -1,4 +1,4 @@
-import { type } from "os";
+
 import { forwardRef } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -7,7 +7,7 @@ extends React.InputHTMLAttributes<HTMLInputElement> {}
 
 const Input = forwardRef<HTMLInputElement, InputProps>(({
     className,
-    propTypes, 
+    type, 
     disabled,
     ...props
 }, ref) => {
